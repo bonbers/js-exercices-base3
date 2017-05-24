@@ -1,0 +1,50 @@
+html{
+background-image:linear-gradient(#0F3397, #FE9C39);
+min-height: 100%;
+background-repeat: no-repeat;
+}
+
+li, h4 {
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  list-style: none;
+  font-family: sans-serif;
+  text-shadow:1px 1px 5px black;
+}
+
+#btncss {
+background-image:linear-gradient(yellow, blue);
+border : 2px solid black;
+border-radius:100%;
+width: 80px;
+height: 70px;
+color: black;
+font-family: sans-serif;
+margin-right: 30px;
+font-weight: bold;
+font-size: 25px;
+}
+#btnjs {
+background-image:linear-gradient(yellow, blue);
+border : 2px solid black;
+border-radius:100%;
+width: 80px;
+height: 70px;
+color: black;
+font-family: sans-serif;
+margin-right: 30px;
+font-weight: bold;
+font-size: 25px;
+}
+
+#btncss:hover {
+  background-image:linear-gradient(blue, yellow);
+}
+#btnjs:hover {
+  background-image:linear-gradient(blue, yellow);
+}
+
+div {
+  text-align: center;
+}

@@ -5,9 +5,92 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       <title>Exercices base 3</title>
       <link rel="stylesheet" href="style.css">
-      <script src="script.js"></script>
+      <!-- <script src="script.js"></script> -->
     </head>
     <body>
+
+
+
+<h4><u>Liste des livres</u></h4>
+</ul>
+<li id="test"></li>
+</ul>
+
+<div>
+ <button id="btncss" name="CSS">CSS</button>
+ <button id="btnjs" name="js">JS</button>
+ </div>
+
+ <script>
+ var books = [
+   {
+     title: 'CSS: The Definitive Guide',
+     author: 'Eric Meyer',
+     link: 'http://shop.oreilly.com/product/0636920012726.do',
+     type: 'css'
+   },
+   {
+     title: 'CSS Development with CSS3',
+     author: 'Zachary Kingston',
+     link: 'http://shop.oreilly.com/product/0636920057970.do',
+     type: 'css'
+   },
+   {
+     title: 'You Don\'t Know JS: Up & Going',
+     author: 'Kyle Simpson',
+     link: 'http://shop.oreilly.com/product/0636920039303.do',
+     type: 'js'
+   },
+   {
+     title: 'Programming JavaScript Applications',
+     author: 'Eric Elliott',
+     link: 'http://shop.oreilly.com/product/0636920033141.do',
+     type: 'js'
+   },
+   {
+     title: 'Modern JavaScript',
+     author: 'unknown',
+     link: 'http://www.oreilly.com/web-platform/free/modern-javascript.csp',
+     type: 'js'
+   }
+ ];
+
+
+
+
+
+  document.getElementById('btncss').onclick = function() {
+
+
+  document.getElementById('test').innerHTML= null;
+
+  for ( var i = 0; i<books.length; i++) {
+
+    if((books[i].type).includes("css")) {
+
+  var liste = document.getElementById('test').innerHTML +=books[i].title + "<br>" + books[i].author + "<br>"
+  + books[i].link + "<br>" + books[i].type + "<br>" + "<br>";
+    }
+  }
+}
+
+document.getElementById('btnjs').onclick = function() {
+
+
+document.getElementById('test').innerHTML= null;
+
+for ( var i = 0; i<books.length; i++) {
+
+  if((books[i].type).includes("js")) {
+
+var liste = document.getElementById('test').innerHTML +=books[i].title + "<br>" + books[i].author + "<br>"
++ books[i].link + "<br>" + books[i].type + "<br>" + "<br>";
+  }
+}
+}
+
+ </script>
+
 
 
     </body>
